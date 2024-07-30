@@ -63,6 +63,13 @@ const combinedSortFilter = (sortField, sortOrder, filterField, filterValue) => {
   });
 };
 
+const searchByBio = (searchTerm) => {
+  const terms = searchTerm.toLowerCase().split(/\s+/);
+  return data.filter(item => 
+    terms.some(term => item.bio.toLowerCase().includes(term))
+  );
+};
+
 loadData();
 
 module.exports = {
@@ -72,4 +79,5 @@ module.exports = {
   sortData,
   filterData,
   getUserById,
+  searchByBio
 };

@@ -4,8 +4,8 @@ const dataController = require('../controllers/dataController');
 const router = express.Router();
 
 router.get('/', dataController.getAllData);
-router.get('/:id', dataController.getUserById); 
-
+router.get('/id/:id', dataController.getUserById); 
+router.get('/search', dataController.searchUsersByBio);
 module.exports = router;
 
 
