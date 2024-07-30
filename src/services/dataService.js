@@ -18,6 +18,11 @@ const getData = () => {
   return data;
 };
 
+const getUserById = (id) => {
+  return data.find(user => user.id === id);
+};
+
+
 const sortData = (field, order = 'asc') => {
   return [...data].sort((a, b) => {
     if (a[field] < b[field]) return order === 'asc' ? -1 : 1;
@@ -65,5 +70,6 @@ module.exports = {
   filterByVersionRange,
   combinedSortFilter,
   sortData,
-  filterData
+  filterData,
+  getUserById,
 };
