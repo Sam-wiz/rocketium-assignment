@@ -46,3 +46,5 @@ The application should now be running locally.
 - **/scripts**: Includes various utility scripts.
 - **package.json**: Contains project metadata and scripts.
 
+#### Rest API Documentation -> https://www.postman.com/science-geologist-25995344/workspace/rocketium-assignment-endpoints/collection/34260692-537495d8-5190-44c9-a626-93a941e4487c?action=share&creator=34260692
+
